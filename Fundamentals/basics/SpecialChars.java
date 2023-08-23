@@ -1,4 +1,4 @@
-package Fundamentals;
+package Fundamentals.basics;
 /**
  * SpecialChars
  */

@@ -1,4 +1,4 @@
-package Fundamentals;
+package Fundamentals.basics;
 
 public class Concat {
     public static void main(String[] args) {
