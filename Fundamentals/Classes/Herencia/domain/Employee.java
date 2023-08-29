@@ -5,13 +5,16 @@ public class Employee extends Person {
     private double salary;
     private static int employeeCounter;
 
-
+    // Concepto de sobrecarga de constructores 
     public Employee() {
+        this.idEmployee = Employee.employeeCounter++;
     }
 
+    // No se puede utilizar super y this a la vez, con sobrecarga de constructores podriamos usarlo asi
     public Employee(String name, double salary) {
-        super(name);
-        this.idEmployee = Employee.employeeCounter++;
+        // super(name);
+        this();
+        this.name = name;
         this.salary = salary;
     }
 
